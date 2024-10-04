@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Propuesta de empaques biodegradables a partir de bagazo y hojas de caña de azúcar">
-    <title>Empaques Biodegradables - Rally de Innovación</title>
+    <meta name="description" content="Propuesta innovadora de empaques biodegradables - GreenPack">
+    <title>GreenPack - Empaques Biodegradables</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
-            color: #333;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #4caf50;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
         nav {
             background-color: #333;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         nav a {
@@ -36,60 +42,115 @@
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content {
+            margin-bottom: 40px;
         }
         h2 {
             color: #4caf50;
+            font-size: 2em;
         }
-        .content {
+        p, ul {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li::before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .call-to-action {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
             margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 1.5em;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .btn:hover {
+            background-color: #4caf50;
+            color: white;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Empaques Biodegradables</h1>
-    <p>Propuesta innovadora en el Rally Latinoamericano de Innovación</p>
+    <h1>GreenPack</h1>
+    <!-- Espacio para la imagen en la esquina superior derecha -->
+    <img src="imagen.png" alt="Logo GreenPack" />
 </header>
 
 <nav>
     <a href="#propuesta">Propuesta</a>
     <a href="#beneficios">Beneficios</a>
     <a href="#impacto">Impacto</a>
+    <a href="#contacto">Contacto</a>
 </nav>
 
 <div class="container">
+    <!-- Propuesta -->
     <section id="propuesta" class="content">
-        <h2>Propuesta</h2>
-        <p>Nuestra propuesta de envases biodegradables elaborados a partir del bagazo y las hojas de caña de azúcar representa una solución innovadora ante la problemática de los empaques contaminantes. Este enfoque no solo promueve la reducción de desechos plásticos, sino que también contribuye a la valorización de subproductos de la caña de azúcar, un recurso agrícola ampliamente disponible.</p>
+        <h2>Propuesta Innovadora</h2>
+        <p>En GreenPack, proponemos la fabricación de envases biodegradables para alimentos y bebidas utilizando el bagazo y las hojas de caña de azúcar. Esta iniciativa busca reemplazar los empaques plásticos contaminantes por una solución sostenible que aprovecha los subproductos agrícolas, alineándose con los principios de la economía circular.</p>
     </section>
 
+    <!-- Beneficios -->
     <section id="beneficios" class="content">
-        <h2>Beneficios</h2>
+        <h2>Beneficios de GreenPack</h2>
         <ul>
-            <li>Materiales orgánicos que se biodegradan fácilmente.</li>
-            <li>Reducción del impacto ambiental y la contaminación.</li>
-            <li>Contribución al modelo de economía circular.</li>
+            <li>Materiales biodegradables y naturales.</li>
+            <li>Reducción de residuos plásticos en el medio ambiente.</li>
+            <li>Aprovechamiento de recursos renovables.</li>
+            <li>Contribución directa a la economía circular.</li>
         </ul>
     </section>
 
+    <!-- Llamado a la acción -->
+    <div class="call-to-action">
+        <p>¡Únete al cambio y reduce tu impacto ambiental con GreenPack!</p>
+        <a href="#contacto" class="btn">Contáctanos para más información</a>
+    </div>
+
+    <!-- Impacto Ambiental -->
     <section id="impacto" class="content">
         <h2>Impacto Ambiental</h2>
-        <p>Al utilizar estos materiales orgánicos, la solución disminuye la contaminación ambiental y el impacto negativo en la flora y fauna, alineándose con los principios de consumo responsable y los <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank">Objetivos de Desarrollo Sostenible de la ONU</a>.</p>
+        <p>El uso de materiales biodegradables en nuestros empaques ayuda a reducir significativamente la contaminación plástica y los daños al ecosistema. Con GreenPack, estamos comprometidos con los <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank">Objetivos de Desarrollo Sostenible de la ONU</a>, promoviendo un consumo más responsable y un entorno más limpio para todos.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="content">
+        <h2>Contacto</h2>
+        <p>Si estás interesado en saber más sobre nuestra propuesta o deseas colaborar con nosotros, no dudes en ponerte en contacto. ¡Estamos aquí para hacer el cambio juntos!</p>
+        <a href="mailto:info@greenpack.com" class="btn">Envíanos un correo</a>
     </section>
 </div>
 
 <footer>
-    <p>© 2024 Rally Latinoamericano de Innovación - Equipo Innovador</p>
+    <p>© 2024 GreenPack - Empaques Biodegradables. Todos los derechos reservados.</p>
 </footer>
 
 </body>
