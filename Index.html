@@ -15,7 +15,7 @@
             padding: 0;
         }
         header {
-            background: url('high-plants-of-sugar-cane.jpg') no-repeat center center;
+            background: url('depositphotos_5379103-stock-photo-panorama-of-sugar-cane-plantation.jpg') no-repeat center center;
             background-size: cover;
             color: white;
             display: flex;
@@ -108,6 +108,30 @@
             color: white;
         }
 
+        /* Carrusel de imágenes */
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel img.active {
+            opacity: 1;
+        }
+
         /* Responsiveness */
         @media (max-width: 768px) {
             header h1 {
@@ -129,6 +153,9 @@
             }
             .btn {
                 font-size: 1em;
+            }
+            .carousel {
+                height: 300px;
             }
         }
 
@@ -153,6 +180,9 @@
                 font-size: 0.9em;
                 padding: 8px 15px;
             }
+            .carousel {
+                height: 200px;
+            }
         }
     </style>
 </head>
@@ -160,7 +190,6 @@
 
 <header>
     <h1>GreenPack</h1>
-    <!-- Espacio para la imagen del logo, centrado y más grande -->
     <img src="Captura de pantalla (88).png" alt="Logo GreenPack" />
 </header>
 
@@ -189,9 +218,17 @@
         </ul>
     </section>
 
-    <!-- Llamado a la acción -->
+    <!-- Llamado a la acción con carrusel de imágenes -->
     <div class="call-to-action">
         <p>¡Únete al cambio y reduce tu impacto ambiental con GreenPack!</p>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <img src="bandejas-y-tapas-bagasse.jpg" alt="GreenPack en acción" class="active">
+            <img src="envases-bagazo-trigo.jpg" alt="Proceso de producción sostenible">
+            <img src="images.jpeg" alt="Productos biodegradables">
+        </div>
+
         <a href="#contacto" class="btn">Contáctanos para más información</a>
     </div>
 
@@ -212,6 +249,20 @@
 <footer>
     <p>© 2024 GreenPack - Empaques Biodegradables. Todos los derechos reservados.</p>
 </footer>
+
+<script>
+    // Carrusel de imágenes
+    let currentSlide = 0;
+    const images = document.querySelectorAll('.carousel img');
+
+    function changeSlide() {
+        images[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % images.length;
+        images[currentSlide].classList.add('active');
+    }
+
+    setInterval(changeSlide, 3000); // Cambia de imagen cada 3 segundos
+</script>
 
 </body>
 </html>
