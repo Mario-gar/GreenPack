@@ -37,7 +37,7 @@
             height: 150px;
             border-radius: 50%;
             position: absolute;
-            right: 100px;
+            right: 20px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
@@ -157,6 +157,11 @@
             .carousel {
                 height: 300px;
             }
+            /* Ajustes para botones en dispositivos móviles */
+            .call-to-action {
+                font-size: 1.2em;
+                padding: 15px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -182,6 +187,17 @@
             }
             .carousel {
                 height: 200px;
+            }
+            /* Ajustes para evitar superposición en móviles */
+            .call-to-action p {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+            .call-to-action .btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
             }
         }
     </style>
@@ -229,7 +245,7 @@
             <img src="platos-de-bagazo-de-cana-darnel-naturals-producto-maestro-web.jpg" alt="Productos biodegradables">
         </div>
 
-        <a href="#contacto" class="btn">Contáctanos para más información</a>
+        <a href="mailto:greenpackrally@gmail.com" class="btn">Contáctanos para más información</a>
     </div>
 
     <!-- Impacto Ambiental -->
@@ -261,7 +277,7 @@
         images[currentSlide].classList.add('active');
     }
 
-    setInterval(changeSlide, 3000); // Cambia de imagen cada 3 segundos
+    setInterval(changeSlide, 3000);
 </script>
 
 </body>
